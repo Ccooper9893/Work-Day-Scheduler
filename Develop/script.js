@@ -2,6 +2,94 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 $(function () {
+
+  var today = dayjs(); //Variable for todays date
+  $('#currentDay').text(today.format('dddd, MMMM DD')); //Display current date
+
+  var currentTime = dayjs().hour(); //Gets hour not including minutes. 2:56pm will be 14
+      //Saved code  
+
+  var hourBox = [$('#hour-9'), $('#hour-10'), $('#hour-11'), $('#hour-12'), $('#hour-13'), $('#hour-14'), $('#hour-15'), $('#hour-16'), $('#hour-17')];    
+  console.log(currentTime);
+  console.log(typeof currentTime);
+
+
+  //Fills in text boxes with appropriate colors !REAPEAT CODE NEEDS FIXED
+  if (currentTime == 9) {
+    $('#hour-9').addClass('present');
+  } else if (currentTime > 9) {
+    $('#hour-9').addClass('past');
+  } else {
+    $('#hour-9').addClass('future');
+  }
+
+  if (currentTime == 10) {
+    $('#hour-10').addClass('present');
+  } else if (currentTime > 10) {
+    $('#hour-10').addClass('past');
+  } else {
+    $('#hour-10').addClass('future');
+  }
+
+  if (currentTime == 11) {
+    $('#hour-11').addClass('present');
+  } else if (currentTime > 11) {
+    $('#hour-11').addClass('past');
+  } else {
+    $('#hour-11').addClass('future');
+  }
+
+  if (currentTime == 12) {
+    $('#hour-12').addClass('present');
+  } else if (currentTime > 12) {
+    $('#hour-12').addClass('past');
+  } else {
+    $('#hour-12').addClass('future');
+  }
+
+  if (currentTime == 13) {
+    $('#hour-1').addClass('present');
+  } else if (currentTime > 13) {
+    $('#hour-1').addClass('past');
+  } else {
+    $('#hour-1').addClass('future');
+  }
+
+  if (currentTime == 14) {
+    $('#hour-2').addClass('present');
+  } else if (currentTime > 14) {
+    $('#hour-2').addClass('past');
+  } else {
+    $('#hour-2').addClass('future');
+  }
+
+  if (currentTime == 15) {
+    $('#hour-3').addClass('present');
+  } else if (currentTime > 15) {
+    $('#hour-3').addClass('past');
+  } else {
+    $('#hour-3').addClass('future');
+  }
+
+  if (currentTime == 16) {
+    $('#hour-4').addClass('present');
+  } else if (currentTime > 16) {
+    $('#hour-4').addClass('past');
+  } else {
+    $('#hour-4').addClass('future');
+  }
+
+  if (currentTime == 17) {
+    $('#hour-5').addClass('present');
+  } else if (currentTime > 17) {
+    $('#hour-5').addClass('past');
+  } else {
+    $('#hour-5').addClass('future');
+  }
+
+  
+  console.log(currentTime);
+
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
