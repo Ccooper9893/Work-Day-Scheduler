@@ -15,15 +15,8 @@ function init () {
       console.log(text);
       $(`#${i}h`).text(text);
     }
-  }}
+  }};
 
-
-//Event listeners for each work hour 9am - 5pm !HELP REPEAT CODE
-// for (i=9; i<18; i++) {
-//   $(`#SB${i}`).click(function() {
-//     localStorage.setItem(`${i}box`, $(`#${i}h`).val());
-//   })
-// };
 
   $('#SB9').click(function() {
     localStorage.setItem('9box', $('#9h').val());
@@ -62,13 +55,14 @@ function init () {
 
   })
 
+
 //Fills in text boxes with appropriate colors !REAPEAT CODE NEEDS FIXED
 function boxFill() {
   for (i=9; i<18; i++) {
     if (currentTime == i) {
       $(`#hour-${i}`).addClass('present');
     } else if (currentTime > i) {
-      $(`#hour-${i}`).addClass('past')
+      $(`#hour-${i}`).addClass('past');
     } else {
       $(`#hour-${i}`).addClass('future');
     }
