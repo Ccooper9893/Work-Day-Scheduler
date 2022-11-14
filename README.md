@@ -31,8 +31,9 @@ THEN the saved events persist
 
 The following animation demonstrates the application functionality:
 
-<!-- @TODO: create ticket to review/update image) -->
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
+## Screenshot
+- This image shows the localStorage. The containers are gray because it is in the past. Green will be future and Red will be current time
+<img src="Images\WorkdayScreenshot.png" alt="Image of the work day scheduler website">
 
 ## Credit
 - JQuery Web Api
